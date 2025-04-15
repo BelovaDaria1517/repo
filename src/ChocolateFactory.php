@@ -11,7 +11,7 @@ class ChocolateFactory
 {
     public array $vidSnack=["bar","Candy","Cake"];
 
-    public function orderSnek(string $name): void
+    public function orderSnack(string $name): void
     {
         $snek = $this->createSnack($name);
 
