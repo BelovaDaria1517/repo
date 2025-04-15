@@ -2,6 +2,8 @@
 
 namespace Dasha\Parent;
 
+use Dasha\Parent\Snack;
+
 abstract class ChocolateFactory
 {
     abstract protected function createSnack(string $type): Snack;
