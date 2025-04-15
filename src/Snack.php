@@ -4,9 +4,9 @@ namespace Dasha\Parent;
 
 abstract class Snack
 {
-    protected string $name;
-    protected string $chocolate;
-    protected array $toppings;
+    public string $name;
+    public string $chocolate;
+    public array $toppings;
 
     public function __construct(string $name, string $chocolate, array $toppings)
     {
