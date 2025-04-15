@@ -1,0 +1,16 @@
+{
+    "name": "dasha/parent",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Dasha\\Parent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Даша",
+            "email": "dashylyaiv@icloud.com"
+        }
+    ],
+    "require": {}
+}
