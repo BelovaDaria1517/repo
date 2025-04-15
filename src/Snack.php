@@ -17,25 +17,16 @@ abstract class Snack
 
     public function prepare(): void
     {
-        echo "Началось создание snack-а {$this->name}\n";
-        echo "Добавляется шоколад {$this->chocolate}\n";
-        echo "Добавлены начинки: " . implode(', ', $this->toppings) . "\n";
+        echo "{$this->name}\n";
+        echo "{$this->chocolate}\n";
+        echo ":";
+        foreach ($this->toppings as $toppings) {
+            echo "$toppings; ";
+        };
     }
 
-    abstract public function cut(): void;
-
-    public function getName(): string
+    public function cut():void
     {
-        return $this->name;
-    }
-
-    public function getChocolate(): string
-    {
-        return $this->chocolate;
-    }
-
-    public function getToppings(): array
-    {
-        return $this->toppings;
+        echo "Такой снек не нарезают" . PHP_EOL;
     }
 }
